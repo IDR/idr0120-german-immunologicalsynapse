@@ -1,0 +1,4 @@
+---
+target: "Screen:name:idr0120-german-immunologicalsynapse/screenD"
+include: "../bulk.yml"
+path: "idr0120-screenD-plates.tsv"

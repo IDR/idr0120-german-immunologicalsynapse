@@ -1,11 +1,4 @@
 ---
-continue: "true"
-transfer: "ln_s"
-exclude: "clientpath"
-skip:
-  - checksum
-parallel_upload: "10"
-columns:
-    - path
 target: "Screen:name:idr0120-german-immunologicalsynapse/screenA"
+include: "../bulk.yml"
 path: "idr0120-screenA-plates.tsv"
