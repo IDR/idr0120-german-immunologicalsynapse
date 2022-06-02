@@ -1,0 +1,81 @@
+---
+name: idr0120-german-immunologicalsynapse/screenD
+version: 1
+
+defaults:
+  include: no
+  type: string
+  includeclient: yes
+  visible: yes
+  omitempty: yes
+
+columns:
+
+  - name: Material Type
+    clientname: Material Type
+    include: yes
+
+  - name: Characteristics [Patient Identifier]
+    clientname: Patient Identifier
+    include: yes
+
+  - name: Characteristics [Sex]
+    clientname: Sex
+    include: yes
+
+  - name: Characteristics [Age]
+    clientname: Age
+    include: yes
+
+  - name: Experimental Condition [Well Coating]
+    clientname: Well Coating
+    include: yes
+
+  - name: Control Type
+    clientname: Control Type
+    include: yes
+
+  - name: Channels
+    clientname: Channels
+    include: yes
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: yes
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment [Gene Identifier]
+          clientname: Gene Identifier
+          include: true
+          omitempty: false
+        - name: Comment [Gene Identifier]
+          clientname: Gene Identifier URL
+          clientvalue: http://www.ensembl.org/id/{{ value|urlencode }}
+          include: true
+        - name: Comment [Gene Symbol]
+          clientname: Gene Symbol
+          include: true
+          omitempty: false
+
+
+advanced:
+  well_to_images: true
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/gene
+      keys:
+        - Gene Identifier
+        - Gene Symbol
