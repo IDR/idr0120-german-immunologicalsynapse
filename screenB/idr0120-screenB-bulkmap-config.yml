@@ -55,7 +55,7 @@ columns:
         - name: Compound Name
           clientname: Compound Name
           include: true
-        - name: Compound PubChem URL
+        - name: Compound PubChem CID
           clientname: Compound Name URL
           clientvalue: >
             https://pubchem.ncbi.nlm.nih.gov/compound/{{ value|urlencode }}
