@@ -42,7 +42,7 @@ Study License	CC BY 4.0
 Study License URL	https://creativecommons.org/licenses/by/4.0/																																
 Study Copyright	German et al																																
 Study Data Publisher	University of Dundee																																
-Study Data DOI																																
+Study Data DOI	https://doi.org/10.17867/10000182																																
 																																	
 Term Source Name	NCBITaxon	EFO	CMPO	Fbbi																													
 Term Source File	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/																																																									
@@ -53,6 +53,9 @@ Term Source File	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http:
 
 Screen Number	1																																
 Comment[IDR Screen Name]	idr0120-german-immunologicalsynapse/screenA	
+
+
+Screen Data DOI	https://doi.org/10.17867/10000182a
 
 
 Screen Sample Type	cell																															
@@ -135,6 +138,9 @@ Screen Number	2
 Comment[IDR Screen Name]	idr0120-german-immunologicalsynapse/screenB	
 
 
+Screen Data DOI	https://doi.org/10.17867/10000182b
+
+
 Screen Sample Type	cell																															
 Screen Description	Compound screen in NK92 cells.																																
 Screen Size	Plates: 1	5D Images: 	Planes: 8	Average Image Dimension (XYZCT): 1080,1080,8,4,1	Total Tb: 0.2																											
@@ -210,6 +216,9 @@ Processed Data Column Link To Library File	Metadata_Well
 
 Screen Number	3																																
 Comment[IDR Screen Name]	idr0120-german-immunologicalsynapse/screenC	
+
+
+Screen Data DOI	https://doi.org/10.17867/10000182c
 
 
 Screen Sample Type	cell																													
@@ -291,6 +300,9 @@ Processed Data Column Link To Library File	Metadata_Well
 
 Screen Number	4																																
 Comment[IDR Screen Name]	idr0120-german-immunologicalsynapse/screenD	
+
+
+Screen Data DOI	https://doi.org/10.17867/10000182d
 
 
 Screen Sample Type	cell																																		
